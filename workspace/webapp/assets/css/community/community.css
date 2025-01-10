@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.community-main-div{
+    text-align: center;
+    width: 80%;
+}
+.community-options-div{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.community-search{
+    
+    background-color: rgb(194, 194, 194);
+}
+.community-search > input{
+    height: 70%;
+    border-width: 0;
+    background-color: rgb(194, 194, 194);
+}
+.community-search > input:focus{
+    height: 70%;
+    outline: none;
+    background-color: rgb(194, 194, 194);
+}
+.community-write-btn{
+    border: 1px solid springgreen;
+}
+
+.community-title-div{
+    text-align: center;
+}
+.community-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.community-list > div{
+    margin-left: 5%;
+}
+
+.community-main-text{
+    font-family: "Noto Sans KR Thin";
+}
