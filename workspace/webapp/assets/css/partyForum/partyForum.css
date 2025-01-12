@@ -18,18 +18,18 @@ header {
   flex-direction: column;
   justify-content: center;
 }
-
-header>nav {
+  
+nav{
   height: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-nav>div {
+nav > .nonLogin-nav {
   display: flex;
 }
 
-header>nav>div>ul {
+.nonLogin-ul {
   list-style-type: none;
   display: flex;
 }
@@ -49,14 +49,14 @@ header>nav>div>ul {
   color: white;
 }
 
-.nonLogin-contents>a {
+.nonLogin-contents > a {
   width: 160px;
   height: 50px;
   margin: auto;
   margin-right: 40px;
 }
 
-.nonLogin-contents>a>li {
+.nonLogin-contents > a > li {
   line-height: 50px;
   background-color: #2c2c2c;
   font-size: 24px;

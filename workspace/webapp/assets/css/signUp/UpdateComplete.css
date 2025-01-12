@@ -1,0 +1,71 @@
+header {
+  height: 10vh;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  justify-items: center;
+  min-height: 80vh;
+}
+
+.nickName-update-com {
+  height: 330px;
+  font-size: 180px;
+  /* font-weight:lighter; */
+}
+
+.nickName-update-com-text {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nickName-update-com-text > p:first-child {
+  margin-top: 30px
+}
+
+.nickName-update-com-next-box{
+  display: block;
+  margin-top: 120px;
+  background-color: black;
+  height: 50px;
+  width: 25%;
+  border-radius: 10px;
+  align-content: center;
+  
+}
+
+.nickName-update-com-next {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+
+footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #777;
+}
+
+footer a {
+  text-decoration: none;
+  color: #777;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: black;
+  text-decoration-line: none;
+}
