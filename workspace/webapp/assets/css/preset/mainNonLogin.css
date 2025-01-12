@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+
+/* 헤더 */
+header {
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  
+nav{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > .nonLogin-nav {
+  display: flex;
+}
+
+.nonLogin-ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nonLogin-logo {
+  font-family: "Metal Mania";
+  font: bold;
+  margin: auto 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.nonLogin-contents {
+  margin-left: 30px;
+  text-align: center;
+  color: white;
+}
+
+.nonLogin-contents > a {
+  width: 160px;
+  height: 50px;
+  margin: auto;
+  margin-right: 40px;
+}
+
+.nonLogin-contents > a > li {
+  line-height: 50px;
+  background-color: #2c2c2c;
+  font-size: 24px;
+  border-radius: 8px;
+}
+
+.nonLogin-join-box {
+  line-height: 50px;
+}
+
+.nonLogin-join {
+  float: right;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  height: 50px;
+  line-height: 50px;
+  margin: auto;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* 메인 */
+main {
+  background-image: url(../../img/main-background.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  background-color: white;
+}
+
+.nonLogin-title-box {
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  padding-top: 150px;
+}
+
+.nonLogin-title,
+.nonLogin-sub-title {
+  color: rgb(133, 56, 56);
+}
+
+.nonLogin-title {
+  font-family: "Metal Mania";
+  font-size: 128px;
+}
+
+.nonLogin-sub-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.one {
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+/* 풋터 */
+footer {
+  height: 10%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 14px;
+}
+
+.nonLogin-footer-text{
+  padding-bottom: 10px;
+  color: white;
+  justify-items: center;
+}
+
+.nonLogin-footer-text span {
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration-line: none;
+}

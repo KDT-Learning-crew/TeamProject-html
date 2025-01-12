@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../assets/css/preset/preset.css">
   <link rel="stylesheet" href="../../assets/css/partyForum/partyForumWriteing.css">
+  <script defer src="../../assets/js/preset/mainLogin.js"></script>
 
   <title>파티 모집 글쓰기</title>
 </head>
@@ -16,8 +17,8 @@
   <header>
     <nav>
       <div>
-        <div class="nonLogin-logo"><a href="">learnning</a></div>
-        <ul class="nonLogin-contents">
+        <div class="Login-logo"><a href="">learnning</a></div>
+        <ul class="Login-contents">
           <a href="">
             <li>파티 모집</li>
           </a>
@@ -26,10 +27,29 @@
           </a>
         </ul>
       </div>
-      <ul class="nonLogin-join-box">
-        <li class="nonLogin-join"><a href="">로그인</a></li>
-        <li class="nonLogin-join"><a href="">회원가입</a></li>
-      </ul>
+      <div class="login-dropdown">
+        <div class="login-dropdown-box">
+          <div class="login-dropdown-user-box icon-down-dir"></div>
+          <div class="login-dropdown-user">
+            사용자
+          </div>
+          <div class="login-dropdown-icon icon-user-circle-o"></div>
+        </div>
+        <ul id="login-display">
+          <a href=""><li>● 개인 정보 수정</li></a>
+          <a href=""><li>● 모집 현황</li></a>
+          <a href=""><li>● 내 게시물</li></a>
+          <a href="./mainNonLogin.html"><li>● 로그 아웃</li></a>
+        </ul>
+      </div>
+      <div class="login-dropdown-up">
+        <div class="login-togle icon-up-dir"></div>
+        <div class="login-user">
+          사용자
+        </div>
+        <div class="login-user-icon icon-user-circle-o">
+        </div>
+      </div>
     </nav>
   </header>
   <main class="partyForumWriteing-main">
