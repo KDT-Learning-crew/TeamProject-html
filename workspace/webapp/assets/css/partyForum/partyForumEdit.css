@@ -1,0 +1,232 @@
+* { /* 해당 페이지 전체 여백들 0으로 시자작 */
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header>nav{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+nav > div {
+  display: flex;
+}
+header>nav>div>ul {
+  list-style-type: none;
+  display: flex;
+}
+.nonLogin-logo {
+  font-family: "Metal Mania";
+  font: bold;
+  margin: auto 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+.nonLogin-contents {
+  margin-left: 30px;
+  text-align: center;
+  color: white;
+}
+.nonLogin-contents > a {
+  width: 160px;
+  height: 50px;
+  margin: auto;
+  margin-right: 40px;
+}
+.nonLogin-contents > a > li {
+  line-height: 50px;
+  background-color: #2c2c2c;
+  font-size: 24px;
+  border-radius: 8px;
+}
+.nonLogin-join-box {
+  line-height: 50px;
+}
+.nonLogin-join {
+  float: right;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  height: 50px;
+  line-height: 50px;
+  margin: auto;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+
+
+/* 메인 시작 */
+.partyForumEdit-main{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.partyForumEdit-main-container { 
+  /* 해당 컨텐츠가 들어갈 모든 요소들(main태그안에 큰 틀) */
+  left: 50%;
+  margin-top: 30px;
+  position: absolute;
+  text-align: center;
+  width: 70%;;
+  transform: translate(-50%, 0%);
+  /* border: 1px solid red; */
+}
+/* 메인 끝 */
+
+/* 메인 제목 디자인 시작 */
+.partyForumEdit-main-title{ 
+  /* 커뮤니티 글꼴 적용 */
+  margin-bottom: 30px;
+  font-family: "Noto Sans KR ExtraBold";
+}
+/* 메인 제목 디자인 끝 */
+
+/* 게시글 제목, 내용 디자인 시작 */
+.partyForumEdit-title, .partyForumEdit-content{
+  display: flex;
+  flex-direction: row;
+}
+
+.partyForumEdit-title, .partyForumEdit-content{
+  font-family: "Noto Sans KR ExtraBold";
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.partyForumEdit-title-text, .partyForumEdit-content-text{
+  margin-left: 35px;
+  margin-right: 20px;
+  line-height: 40px;
+}
+
+.partyForumEdit-title>input, .partyForumEdit-content>textarea {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  padding: 0px 10px;
+  width: 85%;
+  height: 4vh;
+  border: 1px solid black;
+  color: black;
+  font-family: "Noto Sans KR Medium";
+}
+
+.partyForumEdit-title>textarea:focus {
+  outline: none;
+}
+/* 게시글 제목 디자인 끝 */
+
+.partyForumEdit-content{
+  margin-top: 20px;
+}
+
+.partyForumEdit-content > textarea{
+  font-size: 15px;
+  padding-top: 10px;
+  resize: none;
+  height: 377px;
+}
+
+.partyForumEdit-content > textarea::placeholder{
+  margin-top: 20px;
+}
+/* 게시글 내용 디자인 끝 */
+
+/* 게시글 파일 업로드 디자인 시작 */
+.partyForumEdit-file{
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  width: 85%;
+  margin-left: 7%; 
+}
+.icon-file-image{
+  font-size: 35px;
+}
+.partyForumEdit-file-select{
+  padding-top: 5px;
+  padding-left: 5px;
+  background-color: #F5F5F5;
+  width: 35%;
+  text-align: left;
+  margin-top: 10px;
+  border: 1px solid black;
+}
+
+
+
+.partyForumEdit-editCancel-button{
+  margin-top: 10px;
+  border: 0;
+  background-color: #595959;
+  color: white;
+  position: absolute;
+  border-radius: 5px;
+  width: 10%;
+  height: 100%;
+  font-size: 20px;
+  right: 12%;
+}
+.partyForumEdit-editComplete-button{
+  margin-top: 10px;
+  border: 0;
+  background-color: #595959;
+  color: white;
+  position: absolute;
+  border-radius: 5px;
+  width: 10%;
+  height: 100%;
+  font-size: 20px;
+  right: 0%;
+}
+
+
+
+
+
+ 
+
+
+
+/* 푸터 시작 */
+footer {
+  height: 10%;
+  width:  100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 14px;
+}
+
+.nonLogin-footer-text{
+  padding-bottom: 10px;
+  color: white;
+  justify-items: center;
+}
+
+.nonLogin-footer-text span {
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration-line: none;
+}
