@@ -1,0 +1,53 @@
+main {
+   position: relative;
+   height: 80%;
+   width: 100%;
+}
+
+.myPage-container {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   width: 100%;
+}
+
+.myPage-container h1 {
+   margin: 80px auto;
+}
+
+.myPage-container hr {
+   width: 72%;
+   margin: 5px;
+}
+
+.myPage-content {
+   display: flex;
+   justify-content: space-between;
+   width: 70%;
+}
+
+.myPage-content .nick {
+   width: 15%;
+   text-align: left;
+}
+
+.myPage-content .tear {
+   width: 12%;
+}
+
+.myPage-content .categori {
+   width: 9%;
+}
+
+.myPage-content .title {
+   width: 45%;
+}
+
+.myPage-content .comment {
+   width: 9%;
+}
+
+.myPage-content .date {
+   width: 10%;
+}
