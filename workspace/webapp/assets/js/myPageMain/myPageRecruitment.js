@@ -40,6 +40,7 @@ function pageNation() {
    const pagenation = document.querySelector(".myPage-pageNation");
 
    //페이지 번호 붙이기
+   pagenation.innerHTML = '';
    let newSpan = document.createElement("span");
    newSpan.classList.add(".myPage-pageNation-li");
    newSpan.innerHTML = '<i class="fa-solid fa-angles-left"></i>';
@@ -75,7 +76,7 @@ function showPage(e) {
    const range = pageSize * (num - 1);
 
    for (let i = range; i < range + pageSize; i++) {
-      if (i >= pageItemsCnt) {
+      if (i > pageItemsCnt) {
          break
       }
       addList();
