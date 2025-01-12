@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   // DOM 요소 가져오기
-  const loginForm = document.getElementById("login-form");
-  const loginIdInput = document.getElementById("login-id");
-  const loginPasswordInput = document.getElementById("login-password");
-  const loginButton = document.querySelector(".login-button");
+  const loginForm = document.getElementById("adminLogin-form");
+  const loginIdInput = document.getElementById("adminLogin-id");
+  const loginPasswordInput = document.getElementById("adminLogin-password");
+  const loginButton = document.querySelector(".adminLogin-button");
 
-  // 테스트용 저장된 아이디와 비밀번호 (실제로는 서버와)
+  // 테스트용 저장된 아이디와 비밀번호 (실제로는 서버와 통신해야 합니다)
   const storedUser = {
     id: "testuser", // 테스트용 아이디
     password: "test1234*" // 테스트용 비밀번호
@@ -28,4 +28,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
