@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const confirmButton = document.getElementById("changePass-button");
+  const confirmButton = document.getElementById("changePassCom-button");
 
   confirmButton.addEventListener("click", () => {
     alert("비밀번호 수정이 완료되었습니다. 로그인 화면으로 이동합니다.");
