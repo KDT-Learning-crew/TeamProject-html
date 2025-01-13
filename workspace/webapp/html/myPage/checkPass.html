@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>비밀번호 확인</title>
   <link rel="stylesheet" href="../../assets/css/myPage/checkPass.css">
-  <link rel="stylesheet" href ="../../assets/css/preset/preset.css">
+  <link rel="stylesheet" href="../../assets/css/preset/preset.css">
 </head>
+
 <body>
   <div class="total-container">
     <div class="checkPass-container">
-      <header>    
+      <header>
         <p>LEARNNING</p>
       </header>
       <main>
         <p class="checkPass-text1">회원님의 개인정보를 지키는 중입니다<br> 비밀번호를 입력해 주세요</p>
         <form>
           <div class="checkPass-input-container1">
-            <input type="password" id="password" placeholder="비밀번호를 입력해주세요" maxlength="16" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$" required>
+            <input type="password" id="password" placeholder="비밀번호를 입력해주세요" maxlength="16"
+              pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$" required>
           </div>
           <p id="pass-error" class="checkPass-error-message1"></p>
-          
-  
+
+
           <ul class="checkPass-info-list">
             <li>전화번호는 본인인증을 진행하기 위해 입력해주세요.</li>
             <li>인증 문자가 오지 않는다면 스팸번호를 확인 해 주세요.</li>
@@ -30,7 +33,7 @@
           <div class="checkPass-buttons-container">
             <button type="submit" class="checkPass-next-button" disabled>다음</button>
           </div>
-          
+
         </form>
       </main>
       <footer class="checkPass-footer">
@@ -38,7 +41,8 @@
       </footer>
     </div>
   </div>
-  
+
   <script defer src="../../assets/js/myPage/checkPass.js"></script>
 </body>
-</html> 
+
+</html>
