@@ -1,11 +1,14 @@
+/* 관리자 헤더 */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* #mng-tnum{
-  border: none;
-} */
+.mng-body{
+  height: 100vh;
+  width: 100%;
+  /* background-color: red; */
+}
 
 .mng-header {
   height: 10vh;
@@ -33,10 +36,35 @@
   color: white;
   cursor: pointer;
 }
+
+.mng-header-drop{
+  background-color: darkblue;
+  display: none;
+  position: absolute;
+  border-radius: 8px;
+  height: 100px;
+  width: 160px;
+  /* margin-top: 1px; */
+}
+#mng-header-dropDown1{
+  border-bottom: solid 1px black;
+  /* line-height: 50px;
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: bold; */
+}
+#mng-lic:hover .mng-header-drop{
+  display: block;
+}
+
 .mng-logo-contents{
   /* margin-left: 30px; */
   text-align: center;
   color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
 }
 #mng-party{
   width: 160px;
@@ -63,6 +91,7 @@
 .mng-join-logout{
   font-weight: bold;
 }
+
 
 /* 메인 시작 */
 .mng-main {
@@ -95,25 +124,35 @@
   border-radius: 10px;
 }
 #mng-search-btn{
-  border: 0;
+  border: 0px;
   background-color: silver;
   cursor: pointer;
 }
-#mng-search-text{
+.mng-search-box{
+  /* display: flex; */
+  background-color: silver;
   height: 25px;
-  margin: 2px 3px;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.icon-search{
+  color: gray
+}
+
+#mng-search-text{
   border: 0;
   background-color: silver;
+  outline:none;
 }
-.icon-down-open{
-  height: 29px;
-  background-color: silver;
-  border-style: none;
+/* 드롭다운 */
+.icon-down-dir{
+ color: gray;
 }
 
-
-
-
+.mng-search-bar{
+  border-bottom: solid 1px black;
+}
 .mng-box-main {
   /* background-color: yellow; */
   /* border: 2px solid red; */
@@ -183,11 +222,8 @@ width: 5%;
   display: flex;
   border-bottom: solid 1px black;
 }
-#mng-checkbox{
-  width: 5%;
-}
 .mng-result-nickname{
-  width: 30%;
+  width: 35%;
   text-align: right;
 }
 .mng-result-tier{
