@@ -1,7 +1,7 @@
-const loginDropdownBox = document.querySelector('.login-dropdown-box');
-const dropList = document.querySelector('#login-display');
-const loginCommu = document.querySelector('.login-commu');
-const loginCommuSub = document.querySelector('.login-commu-sub');
+const loginDropdownBox = document.querySelector('.main-login-dropdown-box');
+const dropList = document.querySelector('#main-login-display');
+const loginCommu = document.querySelector('.main-login-commu');
+const loginCommuSub = document.querySelector('.main-login-commu-sub');
 
 
 // 로그인 중일 때 닉네임 누르면 드롭다운
