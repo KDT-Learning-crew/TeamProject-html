@@ -4,75 +4,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../assets/css/partyForum/partyForumDetail.css">
   <link rel="stylesheet" href="../../assets/css/preset/preset.css">
+  <link rel="stylesheet" href="../../assets/css/partyForum/partyForumDetail.css">
   <script defer src="../../assets/js/preset/mainLogin.js"></script>
 
   <title>키보드워리어님의 게시글</title>
 </head>
 
 <body>
-  <header class="main-login-header">
-    <nav>
-      <div>
-        <div class="main-login-logo"><a href="">learnning</a></div>
-        <ul class="main-login-contents">
-          <a href="">
-            <li>파티 모집</li>
-          </a>
-          <a href="">
-            <li>커뮤니티</li>
-          </a>
-        </ul>
-      </div>
-      <div class="main-login-dropdown">
-        <div class="main-login-dropdown-box">
-          <div class="main-login-dropdown-user-box icon-down-dir"></div>
-          <div class="main-login-dropdown-user">
+  
+    <header class="main-login-header">
+      <nav>
+        <div>
+          <div class="main-login-logo"><a href="">learnning</a></div>
+          <ul class="main-login-contents">
+            <a href="">
+              <li>파티 모집</li>
+            </a>
+            <a href="">
+              <li>커뮤니티</li>
+            </a>
+          </ul>
+        </div>
+        <div class="main-login-dropdown">
+          <div class="main-login-dropdown-box">
+            <div class="main-login-dropdown-user-box icon-down-dir"></div>
+            <div class="main-login-dropdown-user">
+              사용자
+            </div>
+            <div class="main-login-dropdown-icon icon-user-circle-o"></div>
+          </div>
+          <ul id="main-login-display">
+            <a href=""><li>● 개인 정보 수정</li></a>
+            <a href=""><li>● 모집 현황</li></a>
+            <a href=""><li>● 내 게시물</li></a>
+            <a href="./mainNonLogin.html"><li>● 로그 아웃</li></a>
+          </ul>
+        </div>
+        <div class="main-login-dropdown-up">
+          <div class="main-login-togle icon-up-dir"></div>
+          <div class="main-login-user">
             사용자
           </div>
-          <div class="main-login-dropdown-icon icon-user-circle-o"></div>
+          <div class="main-login-user-icon icon-user-circle-o">
+          </div>
         </div>
-        <ul id="main-login-display">
-          <a href=""><li>● 개인 정보 수정</li></a>
-          <a href=""><li>● 모집 현황</li></a>
-          <a href=""><li>● 내 게시물</li></a>
-          <a href="./mainNonLogin.html"><li>● 로그 아웃</li></a>
-        </ul>
-      </div>
-      <div class="main-login-dropdown-up">
-        <div class="main-login-togle icon-up-dir"></div>
-        <div class="main-login-user">
-          사용자
-        </div>
-        <div class="main-login-user-icon icon-user-circle-o">
-        </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
+
+
   <main class="partyForumDetail-main">
     <div class="partyForumDetail-main-container-title">
       <h1 class="partyForumDetail-main-title">파티 모집 게시판</h1>
     </div>
 
     <div class="partyForumDetail-title">
-      <p class="partyForumDetail-title-content">연패중인데 도와줄 사람</p>
-      <p class="partyForumDetail-title-text">고인물</p>
+      <p class="partyForumDetail-title-content">내가 25살에 브론즈를 찍게 된 이유.</p>
+      <p class="partyForumDetail-title-text">공략</p>
     </div>
 
     <div class="partyForumDetail-writer">
       <p class="partyForumDetail-writer-text">작성자 : </p>
       <p class="partyForumDetail-writer-userName">키보드워리어</p>
-      <p class="partyForumDetail-writer-uploadTime">2025-001-11 20:36</p>
+      <p class="partyForumDetail-writer-uploadTime">2025-01-11 22:17</p>
     </div>
 
     <div class="partyForumDetail-content">
       <div class="partyForumDetail-content-text">
-        진짜 제발 제발 제발 제발 <br>
-        이렇게 빌게
+        내가 25살에 브론즈를 찍게 된 이유를 설명할게요<br/>
+        사실 롤을 시작한건 40년전이였는데 이때 내가 첫 컴퓨터 게임이 롤이였습니다<br/>
+        그러다가 랭크 열심히 돌려서 어쩌구 저쩌구
+        이렇게 되었습니다
+        마지막은 노루가 노루를 핥는 "노루스름한 맛"을 보고 가십쇼
       </div>
       <img class="partyForumDetail-content-images" 
-      src="https://resources.chimhaha.net/article/1694521723392-o8wrudmaue9.webp" 
       alt="사용자 이미지">
     </div>
     <div class="partyForumDetail-button-container">
@@ -80,8 +85,10 @@
       <button class="partyForumDetail-edit-button">수정</button>
       <button class="partyForumDetail-delete-button">삭제</button>
     </div>
-
-    <div class="partyForumDetail-button-userApply">참가신청</div>
+    
+    <div class="partyForumDetail-button-userApply">
+      <button class="partyForumDetail-userApply-button">참가신청</button>
+    </div>
     <br>
 
     <div class="partyForumDetail-comment-list-container">
@@ -94,104 +101,12 @@
           <div class="partyForumDetail-comment-list-details">
             <p class="partyForumDetail-comment-list-userName">이렐칼날긴빠이</p>
             <p class="partyForumDetail-comment-list-colon">:</p>
-            <p class="partyForumDetail-comment-list-content">ㅋㅋㅋㅋㅋㅋㅋㅋ</p>
-            <p class="partyForumDetail-comment-list-time">2025-01-11 20:36</p>
+            <p class="partyForumDetail-comment-list-content">개추</p>
+            <p class="partyForumDetail-comment-list-time">2025-01-11 22:22</p>
           </div>
           <hr class="partyForumDetail-comment-line-line">
         </li>
 
-        <li class="partyForumDetail-comment-list-item">
-          <div class="partyForumDetail-comment-list-details">
-            <p class="partyForumDetail-comment-list-userName">키보드워리어</p>
-            <p class="partyForumDetail-comment-list-colon">:</p>
-            <p class="partyForumDetail-comment-list-content">진짜 진지하게 구하는거임</p>
-            <p class="partyForumDetail-comment-list-time">2025-01-11 20:36</p>
-            <button>삭제</button>
-          </div>
-          <hr class="partyForumDetail-comment-line-line">
-        </li>
-
-        <li class="partyForumDetail-comment-list-item">
-          <div class="partyForumDetail-comment-list-details">
-            <p class="partyForumDetail-comment-list-userName">정글의 법칙</p>
-            <p class="partyForumDetail-comment-list-colon">:</p>
-            <p class="partyForumDetail-comment-list-content">ㅋㅋ 나도 사슴벌레 키우네</p>
-            <p class="partyForumDetail-comment-list-time">2025-01-11 20:36</p>
-          </div>
-          <hr class="partyForumDetail-comment-line-line">
-        </li>
-
-        <li class="partyForumDetail-comment-list-item">
-          <div class="partyForumDetail-comment-list-details">
-            <p class="partyForumDetail-comment-list-userName">정글은 김병만</p>
-            <p class="partyForumDetail-comment-list-colon">:</p>
-            <p class="partyForumDetail-comment-list-content">ㅋㅋ 니 보면 니 팀원도 사슴벌레 키움</p>
-            <p class="partyForumDetail-comment-list-time">2025-01-11 20:36</p>
-          </div>
-          <hr class="partyForumDetail-comment-line-line">
-        </li>
-
-        <li class="partyForumDetail-comment-list-item">
-          <div class="partyForumDetail-comment-list-details">
-            <p class="partyForumDetail-comment-list-userName">서폿은 머하냐</p>
-            <p class="partyForumDetail-comment-list-colon">:</p>
-            <p class="partyForumDetail-comment-list-content">ㅋㅋ 사슴벌레 이쁘네</p>
-            <p class="partyForumDetail-comment-list-time">2025-01-11 20:36</p>
-          </div>
-          <hr class="partyForumDetail-comment-line-line">
-        </li>
-        
-        <li class="partyForumDetail-comment-list-item">
-          <div class="partyForumDetail-comment-list-details">
-            <p class="partyForumDetail-comment-list-userName">이렐칼날긴빠이</p>
-            <p class="partyForumDetail-comment-list-colon">:</p>
-            <p class="partyForumDetail-comment-list-content">집에서 장수풍뎅이는 안키우냐ㅋㅋ</p>
-            <p class="partyForumDetail-comment-list-time">2025-01-11 20:36</p>
-          </div>
-          <hr class="partyForumDetail-comment-line-line">
-        </li>
-
-        <li class="partyForumDetail-comment-list-item">
-          <div class="partyForumDetail-comment-list-details">
-            <p class="partyForumDetail-comment-list-userName">집나간 서포터</p>
-            <p class="partyForumDetail-comment-list-colon">:</p>
-            <p class="partyForumDetail-comment-list-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</p>
-            <p class="partyForumDetail-comment-list-time">2025-01-11 20:36</p>
-          </div>
-          <hr class="partyForumDetail-comment-line-line">
-        </li>
-
-        <li class="partyForumDetail-comment-list-item">
-          <div class="partyForumDetail-comment-list-details">
-            <p class="partyForumDetail-comment-list-userName">우리 원딜 머함</p>
-            <p class="partyForumDetail-comment-list-colon">:</p>
-            <p class="partyForumDetail-comment-list-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</p>
-            <p class="partyForumDetail-comment-list-time">2025-01-11 20:36</p>
-          </div>
-          <hr class="partyForumDetail-comment-line-line">
-        </li>
-
-        <li class="partyForumDetail-comment-list-item">
-          <div class="partyForumDetail-comment-list-details">
-            <p class="partyForumDetail-comment-list-userName">우리 원딜 머함</p>
-            <p class="partyForumDetail-comment-list-colon">:</p>
-            <p class="partyForumDetail-comment-list-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</p>
-            <p class="partyForumDetail-comment-list-time">2025-01-11 20:36</p>
-          </div>
-          <hr class="partyForumDetail-comment-line-line">
-        </li>
-
-        <li class="partyForumDetail-comment-list-item">
-          <div class="partyForumDetail-comment-list-details">
-            <p class="partyForumDetail-comment-list-userName">우리 원딜 머함</p>
-            <p class="partyForumDetail-comment-list-colon">:</p>
-            <p class="partyForumDetail-comment-list-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</p>
-            <p class="partyForumDetail-comment-list-time">2025-01-11 20:36</p>
-          </div>
-          <hr class="partyForumDetail-comment-line-line">
-        </li>
-
-        
       </ul>
     </div>
   </main>
@@ -203,24 +118,7 @@
   </footer>
 
 
-  <!-- </div> -->
+<script src="../../assets/js/partyForum/partyForumDetail.js"></script>
 </body>
 
 </html>
-
-
-<!-- /* 참가신청 디자인 시작 */
-.partyForumDetail-button-userApply{
-  border: 0;
-  width: 20%;
-  height: 5vh;
-  font-size: 25px;
-  font-family: "Noto Sans KR Medium";
-  border-radius: 5px;
-  color: white;
-  background-color: #595959;
-  cursor: pointer;
-  text-align: center;
-  margin: 0 auto;
-}
-/* 참가신청 디자인 끝 */ -->
