@@ -8,7 +8,7 @@
   height: 100vh;
 }
 
-.changePass-container {
+.changePassCom-container {
   margin: 0;
   padding: 30px 40px;
   width: 600px;
@@ -28,7 +28,7 @@ main {
   margin: 30px 0;
 }
 
-.changePass-icon{
+.changePassCom-icon{
   height: 120px;
   font-size: 100px;
   color: #333;
@@ -37,7 +37,7 @@ main {
   align-items: center;
 }
 
-.changePass-text {
+.changePassCom-text {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
@@ -46,11 +46,11 @@ main {
   line-height: 1.5; /* 줄 간격 */
 }
 
-.changePass-buttons-container {
+.changePassCom-buttons-container {
   margin-top: 40px;
 }
 
-.changePass-button {
+.changePassCom-button {
   width: 200px;
   height: 50px;
   background-color: #333; 
@@ -64,11 +64,11 @@ main {
   transition: background-color 0.3s ease;
 }
 
-.changePass-button:hover {
+.changePassCom-button:hover {
   background-color: #975a5a; 
 }
 
-.changePass-footer {
+.changePassCom-footer {
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -77,12 +77,12 @@ main {
   color: #777;
 }
 
-.changePass-footer a {
+.changePassCom-footer a {
   text-decoration: none;
   color: #777;
   margin: 0 5px;
 }
 
-.changePass-footer a:hover {
+.changePassCom-footer a:hover {
   text-decoration: underline;
 }
