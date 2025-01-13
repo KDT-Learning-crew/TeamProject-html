@@ -125,8 +125,13 @@ commentAddButton.addEventListener("click", function () { //댓글, 빈값과 값
 document.querySelector('.communityForumDetail-comment-list').addEventListener('click', function(event) {
     if (event.target.classList.contains('communityForumDetail-comment-delete')) {
         const commentItem = event.target.closest('li');
-        if (commentItem) {
-            commentItem.remove();
+        if (confirm("해당 댓글을 삭제하시겠습니까?")) {
+            alert("삭제되었습니다");
+            if (commentItem) {
+                commentItem.remove();
+            }
+        } else {
+    
         }
     }
 });
