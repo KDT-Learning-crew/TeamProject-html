@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../assets/css/preset/preset.css">
-  <link rel="stylesheet" href="../../assets/css/partyForum/partyForumEdit.css">
+  <link rel="stylesheet" href="../../assets/css/partyForum/partyForumWriting.css">
   <script defer src="../../assets/js/preset/mainLogin.js"></script>
-  
-    <title>파티 모집 글 수정</title>
+
+  <title>파티 모집 글쓰기</title>
 </head>
 
 <body>
@@ -51,30 +51,28 @@
         </div>
       </nav>
     </header>
-  <main class="partyForumEdit-main">
-    <div class="partyForumEdit-main-container">
-      <div class="partyForumEdit-main-container-title">
-        <h1 class="partyForumEdit-main-title">파티 모집 글 수정하기</h1>
+
+
+  <main class="partyForumWriting-main">
+    <div class="partyForumWriting-main-container">
+      <div class="partyForumWriting-main-container-title">
+        <h1 class="partyForumWriting-main-title">파티 모집 글쓰기</h1>
       </div>
 
-      <div class="partyForumEdit-title">
-        <p class="partyForumEdit-title-text">제목</p>
-        <input type="text" name="partyForumEdit-title-text-value" id="title" placeholder="제목을 입력하세요(50자)">
+      <div class="partyForumWriting-title">
+        <p class="partyForumWriting-title-text">제목</p>
+        <input type="text" name="partyForumWriting-title-text-value" id="title" placeholder="제목을 입력하세요(50자)">
       </div>
-      <div class="partyForumEdit-content">
-        <p class="partyForumEdit-content-text">내용</p>
-        <div class="partyForumEdit-content-text-content" contentEditable="true">
-         
+      <div class="partyForumWriting-content">
+        <p class="partyForumWriting-content-text">내용</p>
+        <div class="partyForumWriting-content-text-content" contentEditable="true" >
         </div>
-        
-        
       </div>
-      <div class="partyForumEdit-file">
-        <input type="file" accept=".gif, .jpg, .png" style="display:none;" class="partyForumEdit-file-select-button" onchange="selectFile()">
+      <div class="partyForumWriting-file">
+        <input type="file" accept=".gif, .jpg, .png" style="display:none;" class="partyForumWriting-file-select-button" onchange="selectFile()">
         <i class="icon-file-image"></i>
-        <p class="partyForumEdit-file-select"></p>
-        <button class="partyForumEdit-editCancel-button">수정취소</button>
-        <button class="partyForumEdit-editComplete-button">수정완료</button>
+        <p class="partyForumWriting-file-select"></p>
+        <button class="partyForumWriting-button">작성</button>
       </div>
     </div>
   </main>
@@ -86,7 +84,7 @@
   </footer>
 
 
-  <script src="../../assets/js/partyForum/partyForumEdit.js"></script>
+  <script src="../../assets/js/partyForum/partyForumWriting.js"></script>
 </body>
 
 </html>
