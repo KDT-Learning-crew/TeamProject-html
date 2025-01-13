@@ -200,6 +200,12 @@
     font-weight: 900;
 }
 
+body{
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+}
+
 /* 로그인 했을 때 헤더 */
 .main-login-header {
   width: 100%;
