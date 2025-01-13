@@ -48,13 +48,6 @@ function selectFile() {
     const selectFileName = document.querySelector('.communityForumWriting-file-select');
     const contentDiv = document.querySelector('.communityForumWriting-content-text-content');
     const replaceImage = contentDiv.querySelector('img');
-    if (replaceImage) {
-        contentDiv.removeChild(replaceImage);
-        selectFileName.textContent = '선택된 파일 없음(40MB 이하)';
-        selectFileButton.value = '';
-    }
-
-
     if (selectFileButton.files.length > 0) {
         const fileSeletor = selectFileButton.files[0];
         selectFileName.textContent = `${selectFileButton.files[0].name}`;
@@ -69,8 +62,14 @@ function selectFile() {
                 contentDiv.appendChild(img);
             };
             imageDisplay.readAsDataURL(fileSeletor);
+            if (replaceImage) {
+                contentDiv.removeChild(replaceImage);
+                selectFileName.textContent = `${selectFileButton.files[0].name}`;
+                selectFileButton.value = '';
+            }
         }
     } else {
         selectFileName.textContent = '선택된 파일 없음(40MB 이하)';
     }
 }
+selectFile();

@@ -9,13 +9,25 @@ const movePrev = document.querySelector('.icon-left-open');
 const moveNext = document.querySelector('.icon-right-open');
 
 
+//날짜 및 시간 포멧 지정(지금은 현재시간 가져오는데 추후 데베에서 가져오기)
+const upLoadTime = new Date();
+const year = upLoadTime.getFullYear();
+let month = upLoadTime.getMonth() + 1;
+month = String(month).padStart(2, '0');
+let day = upLoadTime.getDate();
+day = String(day).padStart(2, '0');
+let hours = upLoadTime.getHours();
+hours = String(hours).padStart(2, '0');
+let minutes = upLoadTime.getMinutes();
+minutes = String(minutes).padStart(2, '0');
+
 const posts = [];
-for (let i = 1; i <= 100; i++) {
+for (let i = 1; i <= 205; i++) { //게시글 총합 가져오기(페이지수에 따라 하단 숫자 바뀜)
   posts.push({
     writer: `작성자 ${i}`,
     category: `공략`,
     title: `게시물 제목 ${i}`,
-    writeTime: `2025-01-12`,
+    writeTime: `${year}-${month}-${day} ${hours}:${minutes}`,
     postId: `게시글${i}`
   });
 }

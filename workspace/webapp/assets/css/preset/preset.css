@@ -200,202 +200,151 @@
     font-weight: 900;
 }
 
-body{
-  margin: 0px;
-  padding: 0px;
+/* 로그인 했을 때 헤더 */
+*{
+  margin: 0;
+  padding: 0;
+}
+.main-body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
   height: 100vh;
 }
-
-/* 로그인 했을 때 헤더 */
-.main-login-header {
+.main-container {
+  justify-items: center;
+  background-image: url(../../img/main-background.jpg);
+  background-size: cover;
   width: 100%;
+  height: 80%;
+  background-color: white;
+}
+.main-header{
   height: 10%;
-  background-color: black;
+}
+.main-header-container{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-nav{
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  color: white;
-}
-
-nav > div {
-  display: flex;
-}
-
-.main-login-logo {
-  font-family: "Metal Mania";
-  font: bold;
-  margin: auto 30px;
-  font-size: 40px;
-  color: white;
-  cursor: pointer;
-}
-
-.main-login-contents {
-  display: flex;
-  list-style-type: none;
-  margin-left: 30px;
-  text-align: center;
-  color: white;
-}
-
-.main-login-contents > a {
-  width: 160px;
-  height: 50px;
-  margin: auto;
-  margin-right: 40px;
-}
-
-.main-login-contents > a > li {
-  line-height: 50px;
-  background-color: #2c2c2c;
-  font-size: 24px;
-  border-radius: 8px;
-}
-
-.main-login-dropdown {
-  background-color: #757575;
-  height: 50px;
-  width: 125px;
-  justify-content: center;
-  margin: auto 30px;
   position: relative;
-  cursor: pointer;
-}
-
-.main-login-dropdown-box {
-  display: flex;
-}
-
-.main-login-dropdown-user-box {
-  margin: auto 0;
-}
-
-.main-login-dropdown-user {
-  line-height: 50px;
-}
-
-.main-login-dropdown-icon {
-  margin: auto 0;
-}
-
-#main-login-display {
-  display: flex;
-  list-style-type: none;
-  font-size: 15px;
-  position: absolute;
-  flex-direction: column;
-  top : 50px;
-  background-color: #757575;
-  width: 126px;
-  display: none;
-}
-
-.main-login-dropdown > ul > a > li {
-  border: 1px solid black;
-  height: 50px;
-  line-height: 50px;
-}
-
-.main-login-dropdown-up {
-  background-color: #757575;
-  height: 50px;
-  margin: auto 30px;
-  display: none;
-  width: 120px;
-  justify-content: center;
-}
-
-.main-login-togle {
-  margin:auto 0;
-}
-
-.main-login-user {
-  cursor: pointer;
-  margin: auto 0;
-}
-
-.main-login-user-icon {
-  cursor: pointer;
-  margin: auto 0;
-}
-
-/* 로그인 안 했을 때 헤더 */
-.main-nonLogin-header {
-  width: 100%;
-  height: 10%;
+  height: 100%;
+  justify-content: space-between;
   background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
-
-nav > .main-nonLogin-nav {
+.main-header-content{
   display: flex;
 }
-
-.main-nonLogin-ul {
-  list-style-type: none;
-  display: flex;
-}
-
-.main-nonLogin-logo {
-  font-family: "Metal Mania";
-  font: bold;
-  margin: auto 30px;
-  font-size: 40px;
-  color: white;
-  cursor: pointer;
-}
-
-.main-nonLogin-contents {
+.main-header-post-container{
   margin-left: 30px;
-  text-align: center;
-  color: white;
+  margin-top: 20px;
+  display: flex;
 }
-
-.main-nonLogin-contents > a {
+.main-header-post-container > a{
   width: 160px;
   height: 50px;
-  margin: auto;
-  margin-right: 40px;
+  margin-left: 40px;
+  
 }
-
-.main-nonLogin-contents > a > li {
-  line-height: 50px;
+.main-header-post-container > a > li{
   background-color: #2c2c2c;
+  text-align: center;
+  list-style-type: none;
+  line-height: 50px;
   font-size: 24px;
   border-radius: 8px;
 }
-
-.main-nonLogin-join-box {
-  line-height: 50px;
+.main-header-dropdown-container{
+  margin-right: 60px;
+  display: flex;
 }
-
-.main-nonLogin-join {
-  float: right;
-  color: white;
-  font-weight: bold;
-  font-size: 24px;
-  height: 50px;
+.main-header-dropdown{
+  border: 2px solid rgb(95, 95, 95);
+  width: 160px;
+  height: 190px;
+  position: absolute;
+  top: 100%;
+  display: none;
+  flex-direction: column;
+  background-color: rgb(82, 81, 81);
+}
+.main-header-dropdown>a{
+  margin-bottom: 5px;
+  padding: 10px 10px;
+  list-style-type: none;
+}
+.main-header-user-box{
+  position: relative;
+  padding-top: 20px;
+  font-family: 'Noto Sans KR Medium';
   line-height: 50px;
-  margin: auto;
-  margin-right: 30px;
+  font-size: 25px;
+  text-align: center;
+  width: 164px;
+  color: white;
+}
+.main-header-user-box>.icon-down-dir, .main-header-user-box>.icon-up-dir{
+  margin-left: 0%;
+  margin-right: 20px;
   cursor: pointer;
 }
+.main-header-user-box>.icon-user-circle-o{
+  margin-left: 5px;
+  font-size: 25px;
+}
 
+
+.main-title-box>p {
+  color: rgb(133, 56, 56);
+}
+
+.main-header-logo {
+  font-family: "Metal Mania";
+  font-size: 40px;
+  margin: auto 30px;
+}
+.main-title-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-title {
+  text-align: center;
+  font-family: "Metal Mania";
+  font-size: 8rem;
+  margin: auto 30px;
+}
+
+.main-sub-title {
+  text-align: center;
+  font-family: 'Noto Sans KR Medium';
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.main-one {
+  font-size: 20px;
+  margin-top: 40px;
+}
+.main-nonLogin-join-box{
+  text-align: center;
+  display: flex;
+}
+.main-nonLogin-join-box>li{
+  font-family: "Noto Sans KR Bold";
+  font-size: 25px;
+  padding-top: 30px;
+  margin-right: 50px;
+  text-align: center;
+  display: flex;
+}
 
 /* 풋터 */
 .main-footer {
   height: 10%;
   width: 100%;
   background-color: black;
-  display: flex;
+  position: relative;
+  /* display: flex; */
   flex-direction: column;
   justify-content: flex-end;
   text-align: center;
@@ -403,7 +352,11 @@ nav > .main-nonLogin-nav {
 }
 
 .main-login-footer-text{
-  padding-bottom: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* padding-bottom: 10px; */
   color: white;
   justify-items: center;
 }
