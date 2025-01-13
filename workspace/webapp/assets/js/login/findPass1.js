@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     alert("다음 단계로 이동합니다.");
     // 실제 이동 코드 추가
-    // window.location.href = "next-page.html";
+    window.location.href = "../../html/login/findPass2.html";
+
   });
 });

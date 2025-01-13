@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (enteredId === storedUser.id && enteredPassword === storedUser.password) {
       alert("로그인 성공!"); 
       // 실제 이동 코드 추가
-      // window.location.href = "home.html"; // 이동할 페이지로 리디렉션
+      window.location.href = "../../html/preset/mainLogin.html"; // 이동할 페이지로 리디렉션
     } else {
       alert("아이디 또는 비밀번호가 올바르지 않습니다."); 
     }

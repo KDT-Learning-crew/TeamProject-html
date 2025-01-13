@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
   nextButton.addEventListener("click", (event) => {
     event.preventDefault();
     if (!nextButton.disabled) {
-      window.location.href = "next-page.html";
+      window.location.href = "../../html/signUp/signUp2.html";
     }
   });
 
