@@ -5,25 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../assets/css/partyForum/partyForumDetail.css">
+  <link rel="stylesheet" href="../../assets/css/preset/preset.css">
+  <script defer src="../../assets/js/preset/mainLogin.js"></script>
 
   <title>키보드워리어님의 게시글</title>
 </head>
 
 <body>
-
-  <header>
+  <header class="main-login-header">
     <nav>
-      <div class="nonLogin-nav">
-        <div class="nonLogin-logo"><a href="">learnning</a></div>
-        <ul class="nonLogin-contents nonLogin-ul">
-          <a href=""><li>파티 모집</li></a>
-          <a href=""><li>커뮤니티</li></a>
+      <div>
+        <div class="main-login-logo"><a href="">learnning</a></div>
+        <ul class="main-login-contents">
+          <a href="">
+            <li>파티 모집</li>
+          </a>
+          <a href="">
+            <li>커뮤니티</li>
+          </a>
         </ul>
       </div>
-      <ul class="nonLogin-join-box nonLogin-ul">
-        <li class="nonLogin-join"><a href="">로그인</a></li>
-        <li class="nonLogin-join"><a href="../signUp/signup1.html">회원가입</a></li>
-      </ul>
+      <div class="main-login-dropdown">
+        <div class="main-login-dropdown-box">
+          <div class="main-login-dropdown-user-box icon-down-dir"></div>
+          <div class="main-login-dropdown-user">
+            사용자
+          </div>
+          <div class="main-login-dropdown-icon icon-user-circle-o"></div>
+        </div>
+        <ul id="main-login-display">
+          <a href=""><li>● 개인 정보 수정</li></a>
+          <a href=""><li>● 모집 현황</li></a>
+          <a href=""><li>● 내 게시물</li></a>
+          <a href="./mainNonLogin.html"><li>● 로그 아웃</li></a>
+        </ul>
+      </div>
+      <div class="main-login-dropdown-up">
+        <div class="main-login-togle icon-up-dir"></div>
+        <div class="main-login-user">
+          사용자
+        </div>
+        <div class="main-login-user-icon icon-user-circle-o">
+        </div>
+      </div>
     </nav>
   </header>
   <main class="partyForumDetail-main">
@@ -172,8 +196,8 @@
     </div>
   </main>
 
-  <footer>
-    <div class="nonLogin-footer-text">
+  <footer class="main-footer">
+    <div class="main-login-footer-text">
       <span><a href="">이용약관</a></span> | <span><a href="">개인정보 처리 방침</a></span> | <span><a href="">고객센터</a></span>
     </div>
   </footer>
