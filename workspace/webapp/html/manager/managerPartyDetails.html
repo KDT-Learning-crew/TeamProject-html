@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>managerpage</title>
+  <title>파티 상세페이지</title>
   <link rel="stylesheet" href="./../../assets/css/manager/managerPartyDetails.css">
   <link rel="stylesheet" href="./../../assets/css/preset/preset.css">
-  <link rel="stylesheet" href="./../../assets/css/fontello-(icontrash)eae37a8e/css/fontello.css"">
+  <link rel="stylesheet" href="./../../assets/deleteFont/fontello.css">
   <script defer src="./../../assets/js/manager/managerPartyDetails.js"></script>
 </head>
 
@@ -15,10 +15,19 @@
   <header class="mng-header">
     <nav class="mng-nav">
       <div class="mng-nav-containner">
-        <div class="mng-logo"><a href="" id="mng-logo-address">learnning</a></div>
+        <div class="mng-logo"><a href="" id="mng-logo-address">LEARNNING</a></div>
         <ul class="mng-logo-contents">
-          <a href="" id="mng-party"><li id="mng-lip">회원 관리</li></a>
-          <a href="" id="mng-party"><li id="mng-lic">게시글 관리</li></a>
+          <div id="mng-party">
+            <div id="mng-lip">회원 관리</div>
+          </div>
+          <div href="#" id="mng-party">
+            <div id="mng-lic">게시글 관리
+              <ul class="mng-header-drop">
+                <div id="mng-header-dropDown1"><a href="#">파티 모집</a></div>
+                <div id="mng-header-dropDown2"><a href="#">커뮤니티</a></div>
+              </ul>
+            </div>
+          </div>
         </ul>
       </div>
       <div class="mng-join-box">
@@ -32,34 +41,27 @@
         <div class="mng-title">파티 관리</div>
         <div class="mng-search-bar">
           <button id="mng-reset-button">초기화</button>
-          <form id="mng-search-box" action="">
-            <button class="icon-search" id="mng-search-btn" type="submit">
-              <input id="mng-search-text" type="text" name="" placeholder="게시글 검색">
-              <button class="icon-down-open" onclick=""></button>
-            </button>
+          <form class="mng-search-box">
+            <i class="icon-search"></i>
+            <input id="mng-search-text" type="text" name="" placeholder="게시글 검색">
+            <i class="icon-down-dir"></i>
           </form>
         </div>
       </div>
       <div class="mng-box-main">
+        <div class="mng-title-user">
+          <div class="mng-title-userN">러닝크루파이팅</div>
+          <div class="mng-title-userT">꾸준히 버스타고 싶은 뉴비 모집중</div>
+          <div class="mng-title-time">25.01.13 15:00</div>
+        </div>
         <div class="mng-board-header">
           <div class="mng-board-textCh">선택</div>
           <div class="mng-board-textNi">신청자</div>
           <div class="mng-board-textTe">티어</div>
           <div class="mng-board-result">처리 결과</div>
         </div>
-        <div class="mng-title-user">
-          <div class="mng-title-userN">작성자(닉네임)</div>
-          <div class="mng-title-userT">(게시글 제목)</div>
-          <div class="mng-title-time">작성 시간</div>
-        </div>
         <div class="mng-container">
-          <div class="mng-main-titleBox">
-            <div id="mng-main-nickname">러닝크루파이팅</div>
-            <div id="mng-main-title">꾸준히 버스타고 싶은 뉴비 모집중</div>
-            <div id="mng-main-time">2025.01.11 17:00</div>
-          </div>
           <div class="mng-result-textBox">
-            <input type="checkbox" id="mng-checkbox"></input>
             <div class="mng-result-nickname">노형우123</div>
             <div class="mng-result-tier">브론즈</div>
             <div class="mng-result-check">
@@ -67,7 +69,6 @@
             </div>
           </div>
           <div class="mng-result-textBox">
-            <input type="checkbox" id="mng-checkbox"></input>
             <div class="mng-result-nickname">노란상어임니다</div>
             <div class="mng-result-tier">언랭</div>
             <div class="mng-result-check">
@@ -75,19 +76,15 @@
             </div>
           </div>
           <div class="mng-result-textBox">
-            <input type="checkbox" id="mng-checkbox"></input>
             <div class="mng-result-nickname">노123456형우</div>
             <div class="mng-result-tier">골드</div>
             <div class="mng-result-check">
               <p id="mng-result-user2">거절</p>
             </div>
           </div>
-          <div class="mng-box-footer">
-            <button class="icon-trash"></button>
-          </div>
           <div class="mng-pagenation">
             <i class="icon-angle-double-left"></i>
-            <i class="icon-angle-left"></i>
+            <i class="icon-left-open"></i>
             <p>1</p>
             <p>2</p>
             <p>3</p>
@@ -98,7 +95,7 @@
             <p>8</p>
             <p>9</p>
             <p>10</p>
-            <i class="icon-angle-right"></i>
+            <i class="icon-right-open"></i>
             <i class="icon-angle-double-right"></i>
           </div>
         </div>

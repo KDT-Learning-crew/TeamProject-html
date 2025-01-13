@@ -1,13 +1,14 @@
+/* 관리자 헤더 */
 * {
   margin: 0;
   padding: 0;
 }
+
 .mng-body{
-  text-align: center;
+  height: 100vh;
+  width: 100%;
+  /* background-color: red; */
 }
-/* #mng-tnum{
-  border: none;
-} */
 
 .mng-header {
   height: 10vh;
@@ -35,10 +36,35 @@
   color: white;
   cursor: pointer;
 }
+
+.mng-header-drop{
+  background-color: darkblue;
+  display: none;
+  position: absolute;
+  border-radius: 8px;
+  height: 100px;
+  width: 160px;
+  /* margin-top: 1px; */
+}
+#mng-header-dropDown1{
+  border-bottom: solid 1px black;
+  /* line-height: 50px;
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: bold; */
+}
+#mng-lic:hover .mng-header-drop{
+  display: block;
+}
+
 .mng-logo-contents{
   /* margin-left: 30px; */
   text-align: center;
   color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
 }
 #mng-party{
   width: 160px;
@@ -66,6 +92,7 @@
   font-weight: bold;
 }
 
+
 /* 메인 시작 */
 
 .mng-main {
@@ -82,35 +109,51 @@
 }
 
 .mng-search-bar {
-  display: flex;
+  display: flex; 
   justify-content: right;
 }
-/* 드롭다운 */
 
-.icon-down-dir{
-  height: 29px;
+
+.mng-search-box{
+  /* display: flex; */
   background-color: silver;
-  border-style: none;
+  /* height: 25px; */
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.icon-search{
+  color: gray
+}
+
+#mng-search-text{
+  border: 0;
+  /* background-color: silver; */
+  outline:none;
+}
+/* 드롭다운 */
+.icon-down-dir{
+ color: gray;
+ /* position: relative; */
 }
 .mng-dropDown-text{
   list-style-type: none;
   display: none;
   position: absolute;
-}
-.mng-dropDown-text{
-  margin-top: 7px;
-  margin-left: -61px;
+  /* margin-top: 7px; */
+  margin-left: 140px;
   background-color: beige;
   width: 80px;
   height: 40px;
   font-size: 13px;
   align-content: center;
 }
-
 .icon-down-dir:hover .mng-dropDown-text{
   display: block;
 }
-
+#mng-text-un{
+  border-bottom: solid 1px black;
+}
 .mng-box-main {
   /* background-color: yellow; */
 }
@@ -162,7 +205,9 @@
 }
 #mng-checkbox{
   width: 3%;
-  /* zoom: 1; */
+  height: 15px;
+  position: relative;
+  top: 3px;
 }
 #mng-board-number{
   /* position: absolute; */
@@ -268,13 +313,14 @@
   cursor: pointer;
 }
 .mng-pagenation{
-  width: 100;
+  width: 100%;
   display: flex;
   justify-content: center;
   font-weight: bold;
 }
 .mng-pagenation > i, p {
   cursor: pointer;
+  padding: 10px;
 }
 
 
