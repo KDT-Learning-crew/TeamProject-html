@@ -55,7 +55,7 @@ body{
   border-radius: 5px; /* div 테두리를 둥글게 */
   background-color: rgb(194, 194, 194); /* 배경색 회색으로 */
 }
-.icon-search, .icon-down-dir{ /* 돋보기, 화살표 아래 */
+.icon-search, .partyForum-options-search > .icon-down-dir{ /* 돋보기, 화살표 아래 */
   color: gray; /* 돋보기, 화살표 아래 아이콘 색상 지정 */
 }
 .partyForum-options-search>input { /* 인풋을 아이콘과 하나같이 보이기 위해 인풋 자식 선택으로 속성 지정 시작 */

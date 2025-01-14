@@ -13,44 +13,32 @@
 
 <body>
 
-    <header class="main-login-header">
-      <nav>
-        <div>
-          <div class="main-login-logo"><a href="">learnning</a></div>
-          <ul class="main-login-contents">
-            <a href="">
-              <li>파티 모집</li>
-            </a>
-            <a href="">
-              <li>커뮤니티</li>
-            </a>
-          </ul>
+  <header class="main-header">
+    <nav class="main-header-container">
+      <div class="main-header-content">
+        <div class="main-header-logo"><a href="">learnning</a></div>
+        <div class="main-header-post-container">
+          <a href="../partyForum/partyForum.html">
+            <li>파티 모집</li>
+          </a>
+          <a href="../communityForum/communityForum.html">
+            <li>커뮤니티</li>
+          </a>
         </div>
-        <div class="main-login-dropdown">
-          <div class="main-login-dropdown-box">
-            <div class="main-login-dropdown-user-box icon-down-dir"></div>
-            <div class="main-login-dropdown-user">
-              사용자
-            </div>
-            <div class="main-login-dropdown-icon icon-user-circle-o"></div>
-          </div>
-          <ul id="main-login-display">
-            <a href=""><li>● 개인 정보 수정</li></a>
-            <a href=""><li>● 모집 현황</li></a>
-            <a href=""><li>● 내 게시물</li></a>
-            <a href="./mainNonLogin.html"><li>● 로그 아웃</li></a>
-          </ul>
+      </div>
+      <div class="main-header-dropdown-container">
+        <div class="main-header-user-box">
+          <i class="icon-down-dir"></i>사용자<i class="icon-user-circle-o"></i>
         </div>
-        <div class="main-login-dropdown-up">
-          <div class="main-login-togle icon-up-dir"></div>
-          <div class="main-login-user">
-            사용자
-          </div>
-          <div class="main-login-user-icon icon-user-circle-o">
-          </div>
+        <div class="main-header-dropdown">
+          <a href="../myPage/checkPass.html">• 개인 정보 수정</a><hr/>
+          <a href="../myPage/myPageRecruitment.html">• 모집 현황</a><hr/>
+          <a href="../myPage/myPageMyPost.html">• 내 게시물</a><hr/>
+          <a href="./mainNonLogin.html">• 로그 아웃</a>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
 
   <main class="partyForumWriting-main">

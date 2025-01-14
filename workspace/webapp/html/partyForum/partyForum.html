@@ -6,29 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../assets/css/preset/preset.css">
   <link rel="stylesheet" href="../../assets/css/partyForum/partyForum.css">
+  <script defer src="../../assets/js/preset/mainLogin.js"></script>
 
   <title>파티 모집 게시글 목록</title>
 </head>
 
 <body>
 
-  <header class="main-nonLogin-header">
-    <nav>
-      <div class="main-nonLogin-nav">
-        <div class="main-nonLogin-logo"><a href="">learnning</a></div>
-        <ul class="main-nonLogin-contents main-nonLogin-ul">
-          <a href="">
+  <header class="main-header">
+    <nav class="main-header-container">
+      <div class="main-header-content">
+        <div class="main-header-logo"><a href="">learnning</a></div>
+        <div class="main-header-post-container">
+          <a href="../partyForum/partyForum.html">
             <li>파티 모집</li>
           </a>
-          <a href="">
+          <a href="../communityForum/communityForum.html">
             <li>커뮤니티</li>
           </a>
-        </ul>
+        </div>
       </div>
-      <ul class="main-nonLogin-join-box main-nonLogin-ul">
-        <li class="main-nonLogin-join"><a href="">로그인</a></li>
-        <li class="main-nonLogin-join"><a href="../signUp/signup1.html">회원가입</a></li>
-      </ul>
+      <div class="main-header-dropdown-container">
+        <div class="main-header-user-box">
+          <i class="icon-down-dir"></i>사용자<i class="icon-user-circle-o"></i>
+        </div>
+        <div class="main-header-dropdown">
+          <a href="../myPage/checkPass.html">• 개인 정보 수정</a>
+          <hr />
+          <a href="../myPage/myPageRecruitment.html">• 모집 현황</a>
+          <hr />
+          <a href="../myPage/myPageMyPost.html">• 내 게시물</a>
+          <hr />
+          <a href="./mainNonLogin.html">• 로그 아웃</a>
+        </div>
+      </div>
     </nav>
   </header>
 

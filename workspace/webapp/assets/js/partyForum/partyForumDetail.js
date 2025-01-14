@@ -10,6 +10,7 @@ let imageUrl = null;                                                            
 const partyForumIndexButton = document.querySelector('.partyForumDetail-partyForum-index-button');  //목록 버튼
 const partyForumEditButton = document.querySelector('.partyForumDetail-edit-button');                   //수정 버튼
 const partyForumDeleteButton = document.querySelector('.partyForumDetail-delete-button');               //삭제 버튼
+const partyForumApplyButton = document.querySelector('.partyForumDetail-userApply-button');             //참가신청 버튼
 const partyForumDetailCommentTextInput = document.querySelector('.partyForumDetail-comment-list-container');//댓글작성하는 요소의 부모 
 const CommentInput = partyForumDetailCommentTextInput.querySelector('input');                               //댓글 인풋 특정하기
 const commentAddButton = partyForumDetailCommentTextInput.querySelector('button');                          //등록하기 특정하기
@@ -138,6 +139,13 @@ partyForumDeleteButton.addEventListener("click", function () {
     location.href = link;
     location.replace(link);
     window.open(link);
+  } else {
+
+  }
+});
+partyForumApplyButton.addEventListener("click", function () {
+  if (confirm("참가 하시겠습니까??")) {
+    alert("신청이 완료되었습니다");
   } else {
 
   }
