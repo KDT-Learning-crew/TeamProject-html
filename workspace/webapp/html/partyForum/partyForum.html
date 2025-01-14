@@ -4,32 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../assets/css/partyForum/partyForum.css">
   <link rel="stylesheet" href="../../assets/css/preset/preset.css">
-  <script src="./../../assets/js/partyForum/partyForum.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../assets/css/partyForum/partyForum.css">
+  <script defer src="../../assets/js/preset/mainLogin.js"></script>
 
-  <title>파티 모집</title>
+  <title>파티 모집 게시글 목록</title>
 </head>
 
 <body>
-  <header class="main-nonLogin-header">
-    <nav>
-      <div class="main-nonLogin-nav">
-        <div class="main-nonLogin-logo"><a href="">learnning</a></div>
-        <ul class="main-nonLogin-contents main-nonLogin-ul">
-          <a href="">
+
+  <header class="main-header">
+    <nav class="main-header-container">
+      <div class="main-header-content">
+        <div class="main-header-logo"><a href="">learnning</a></div>
+        <div class="main-header-post-container">
+          <a href="../partyForum/partyForum.html">
             <li>파티 모집</li>
           </a>
-          <a href="">
+          <a href="../communityForum/communityForum.html">
             <li>커뮤니티</li>
           </a>
-        </ul>
+        </div>
       </div>
-      <ul class="main-nonLogin-join-box main-nonLogin-ul">
-        <li class="main-nonLogin-join"><a href="">로그인</a></li>
-        <li class="main-nonLogin-join"><a href="../signUp/signup1.html">회원가입</a></li>
-      </ul>
+      <div class="main-header-dropdown-container">
+        <div class="main-header-user-box">
+          <i class="icon-down-dir"></i>사용자<i class="icon-user-circle-o"></i>
+        </div>
+        <div class="main-header-dropdown">
+          <a href="../myPage/checkPass.html">• 개인 정보 수정</a>
+          <hr />
+          <a href="../myPage/myPageRecruitment.html">• 모집 현황</a>
+          <hr />
+          <a href="../myPage/myPageMyPost.html">• 내 게시물</a>
+          <hr />
+          <a href="./mainNonLogin.html">• 로그 아웃</a>
+        </div>
+      </div>
     </nav>
   </header>
 
@@ -46,7 +56,7 @@
           <i class="icon-down-dir"></i>
         </div>
         <div class="partyForum-write-button">
-          <button type="button">글쓰기</button>
+          <button type="button" class="partyForum-write-btn">글쓰기</button>
         </div>
       </div>
 
@@ -67,157 +77,9 @@
           </div>
         </div>
         <hr class="partyForum-list-line">
+        
+        <!-- 리스트들을 담을 ul 태그 -->
         <ul class="partyForum-list">
-          <li class="partyForum-list-item">
-            <div class="partyForum-list-writer">
-              <p>키보드워리어</p>
-            </div>
-            <div class="partyForum-list-userSkill">
-              <p>고인물</p>
-            </div>
-            <div class="partyForum-list-title">
-              <p>챌린저 듀오 구함 탑레 필수</p>
-            </div>
-            <div class="partyForum-list-write-time">
-              <p>2025-1-11 20:36</p>
-            </div>
-          </li>
-          <hr class="partyForum-list-item-line">
-          <li class="partyForum-list-item">
-            <div class="partyForum-list-writer">
-              <p>키보드워리어</p>
-            </div>
-            <div class="partyForum-list-userSkill">
-              <p>뉴비</p>
-            </div>
-            <div class="partyForum-list-title">
-              <p>오늘 첨하는데 도와줄 분</p>
-            </div>
-            <div class="partyForum-list-write-time">
-              <p>2025-1-11 20:36</p>
-            </div>
-          </li>
-          <hr class="partyForum-list-item-line">
-          <li class="partyForum-list-item">
-            <div class="partyForum-list-writer">
-              <p>키보드워리어</p>
-            </div>
-            <div class="partyForum-list-userSkill">
-              <p>뉴비</p>
-            </div>
-            <div class="partyForum-list-title">
-              <p>오늘 4연패 중이에요 도와주세요</p>
-            </div>
-            <div class="partyForum-list-write-time">
-              <p>2025-1-11 20:36</p>
-            </div>
-          </li>
-          <hr class="partyForum-list-item-line">
-          <li class="partyForum-list-item">
-            <div class="partyForum-list-writer">
-              <p>키보드워리어</p>
-            </div>
-            <div class="partyForum-list-userSkill">
-              <p>뉴비</p>
-            </div>
-            <div class="partyForum-list-title">
-              <p>원딜 잘하시는 분 구해요</p>
-            </div>
-            <div class="partyForum-list-write-time">
-              <p>2025-1-11 20:36</p>
-            </div>
-          </li>
-          <hr class="partyForum-list-item-line">
-          <li class="partyForum-list-item">
-            <div class="partyForum-list-writer">
-              <p>키보드워리어</p>
-            </div>
-            <div class="partyForum-list-userSkill">
-              <p>고인물</p>
-            </div>
-            <div class="partyForum-list-title">
-              <p>뉴비 도와드림 2시간만</p>
-            </div>
-            <div class="partyForum-list-write-time">
-              <p>2025-1-11 20:36</p>
-            </div>
-          </li>
-          <hr class="partyForum-list-item-line">
-          <li class="partyForum-list-item">
-            <div class="partyForum-list-writer">
-              <p>키보드워리어</p>
-            </div>
-            <div class="partyForum-list-userSkill">
-              <p>뉴비</p>
-            </div>
-            <div class="partyForum-list-title">
-              <p>화안내시는 분들만</p>
-            </div>
-            <div class="partyForum-list-write-time">
-              <p>2025-1-11 20:36</p>
-            </div>
-          </li>
-          <hr class="partyForum-list-item-line">
-          <li class="partyForum-list-item">
-            <div class="partyForum-list-writer">
-              <p>키보드워리어</p>
-            </div>
-            <div class="partyForum-list-userSkill">
-              <p>고인물</p>
-            </div>
-            <div class="partyForum-list-title">
-              <p>서포터 유저만 구함</p>
-            </div>
-            <div class="partyForum-list-write-time">
-              <p>2025-1-11 20:36</p>
-            </div>
-          </li>
-          <hr class="partyForum-list-item-line">
-          <li class="partyForum-list-item">
-            <div class="partyForum-list-writer">
-              <p>키보드워리어</p>
-            </div>
-            <div class="partyForum-list-userSkill">
-              <p>뉴비</p>
-            </div>
-            <div class="partyForum-list-title">
-              <p>10레벨인데 같이 일반하실 듀오분들 구해요</p>
-            </div>
-            <div class="partyForum-list-write-time">
-              <p>2025-1-11 20:36</p>
-            </div>
-          </li>
-          <hr class="partyForum-list-item-line">
-          <li class="partyForum-list-item">
-            <div class="partyForum-list-writer">
-              <p>키보드워리어</p>
-            </div>
-            <div class="partyForum-list-userSkill">
-              <p>고인물</p>
-            </div>
-            <div class="partyForum-list-title">
-              <p>나랑 부캐로 양학할 사람 구함</p>
-            </div>
-            <div class="partyForum-list-write-time">
-              <p>2025-1-11 20:36</p>
-            </div>
-          </li>
-          <hr class="partyForum-list-item-line">
-          <li class="partyForum-list-item">
-            <div class="partyForum-list-writer">
-              <p>키보드워리어</p>
-            </div>
-            <div class="partyForum-list-userSkill">
-              <p>뉴비</p>
-            </div>
-            <div class="partyForum-list-title">
-              <p>롤 하실분</p>
-            </div>
-            <div class="partyForum-list-write-time">
-              <p>2025-1-11 20:36</p>
-            </div>
-          </li>
-          <hr class="partyForum-list-item-line">
 
         </ul>
       </div>
@@ -226,29 +88,20 @@
       <div class="partyForum-page-number-button">
         <i class="icon-angle-double-left"></i>
         <i class="icon-left-open"></i>
-        <p>1</p>
-        <p>2</p>
-        <p>3</p>
-        <p>4</p>
-        <p>5</p>
-        <p>6</p>
-        <p>7</p>
-        <p>8</p>
-        <p>9</p>
-        <p>10</p>
+        <div class="partyForum-page-numbers"></div>
         <i class="icon-right-open"></i>
         <i class="icon-angle-double-right"></i>
       </div>
     </div>
   </main>
+  
   <footer class="main-footer">
     <div class="main-nonLogin-footer-text">
       <span><a href="">이용약관</a></span> | <span><a href="">개인정보 처리 방침</a></span> | <span><a href="">고객센터</a></span>
     </div>
   </footer>
 
-
-  <!-- </div> -->
+  <script src="../../assets/js/partyForum/partyForum.js"></script>
 </body>
 
 </html>
