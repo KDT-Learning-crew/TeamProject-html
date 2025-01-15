@@ -110,82 +110,25 @@ postBottomNumber();
 
 
 
-
-
-// postSearch.addEventListener("keydown", function (event) {
-//   if (event.key === 'Enter') {
-//     event.preventDefault(); // 기본 동작(새 줄 추가) 방지
-//     alert(`${postSearch.value}의 내용을 검색합니다`);
-//   }
-// });
-
 /* 체크박스 체크 시 해당 리스트 삭제*/
-<<<<<<< HEAD
-// const list = document.querySelectorAll("#mng-list-checkbox"); //체크박스
-const del = document.querySelector(".icon-trash"); //삭제버튼
 
-// del.onclick = () => {
-//   alert("선택 항목을 정말 삭제하시겠습니까?");
-//   for (let i = 0; i < list.length; i++) {
-//     if (list[i].checked) {
-//       list[i].parentElement.remove();
-//     }
-//   }
-// };
-
-function getCheckedItems() {
-  const listItems = document.querySelectorAll('li');
-  const checkedItems = [];
-  listItems.forEach(item => {
-    const checkbox = item.querySelector('input[type="checkbox"]');
-    if (checkbox && checkbox.checked) {
-      checkedItems.push(item.textContent.trim());
-    }
+document.addEventListener("DOMContentLoaded", function() {
+  // 삭제 버튼
+  const deleteButton = document.querySelector('.icon-trash');
+  // 체크박스 선택된 항목 삭제
+  deleteButton.addEventListener('click', function() {
+    // 체크박스를 선택한 항목들 가져오기
+    const checkedItems = document.querySelectorAll('.mng-list-check:checked');
+    // 선택된 항목들 삭제
+    checkedItems.forEach(item => {
+      const listItem = item.closest('li'); // 체크된 항목의 <li> 요소 찾기
+      if (listItem) {
+        const hr = listItem.nextElementSibling;
+        listItem.remove(); // 해당 <li> 삭제
+        if(hr && hr.tagName === 'HR'){
+          hr.remove();
+      }
+    };
   });
-  console.log(`체크된 거: ${checkedItems}`);
-}
-
-// checkedItems.addEventListener(del.onlick)
-
-del.addEventListener("click", getCheckedItems);
-=======
-const deleteButton = document.querySelector('.mng-list-check');
-deleteButton.addEventListener('click', () => {
-  const selectedIndexes = [];
-  const checkboxes = document.querySelectorAll('.mng-list-check:checked');// 체크버튼중에서 채크된것만 필터링 
-  checkboxes.forEach(checkbox => {
-    selectedIndexes.push(parseInt(checkbox.dataset.index, 10));
-  });
-  selectedIndexes.sort((a, b) => b - a); // 베열이라 앞부분부터 삭제하면, 배열의 순서가 꼬이게 됨, 그로인해 정렬을 오름차순에서 내림차순으로 하면 뒤에서 삭제가 되므로 배열의 순서가 안꼬임
-  selectedIndexes.forEach(index => {    //선택된 항목 삭제
-    posts.splice(index, 1);
-  })});
-
-// document.addEventListener("DOMContentLoaded", function() {
-//   // 삭제 버튼
-//   const deleteButton = document.querySelector('.icon-trash');
-//   // 체크박스 선택된 항목 삭제
-//   deleteButton.addEventListener('click', function() {
-//     // 체크박스를 선택한 항목들 가져오기
-//     const checkedItems = document.querySelectorAll('.mng-list-check:checked');
-//     // 선택된 항목들 삭제
-//     checkedItems.forEach(item => {
-//       const listItem = item.closest('li'); // 체크된 항목의 <li> 요소 찾기
-//       if (listItem) {
-//         // const hr = listItem.nextElementSibling;
-//         listItem.remove(); // 해당 <li> 삭제
-//         // if(hr && hr.tagName === 'HR'){
-//           // hr.remove();
-//       }
-//     });
-//   });
-// });
-
-
-
-
-
-
-
-
->>>>>>> 945eb74454e36eefb00f8e2138174d755a56f60b
+});
+});

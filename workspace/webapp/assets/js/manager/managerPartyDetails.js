@@ -104,31 +104,25 @@ postBottomNumber();
 
 
 
-
-
-writeBtn.addEventListener("click", function () {
-  var link = '../../html/mng/mngWriteing.html';
-  location.href = link;
-  // location.replace(link);
-  window.open(link);
-});
-
-postSearch.addEventListener("keydown", function (event) {
-  if (event.key === 'Enter') {
-    event.preventDefault(); // 기본 동작(새 줄 추가) 방지
-    alert(`${postSearch.value}의 내용을 검색합니다`);
-  }
-});
-
 /* 체크박스 체크 시 해당 리스트 삭제*/
-const list = document.querySelectorAll("#mng-list-checkbox"); //체크박스
-const del = document.querySelector(".icon-trash"); //삭제버튼
 
-del.onclick = () => {
-  alert("선택 항목을 정말 삭제하시겠습니까?");
-  for (let i = 0; i < list.length; i++) {
-    if (list[i].checked) {
-      list[i].parentElement.remove();
-    }
-  }
-};
+document.addEventListener("DOMContentLoaded", function() {
+  // 삭제 버튼
+  const deleteButton = document.querySelector('.icon-trash');
+  // 체크박스 선택된 항목 삭제
+  deleteButton.addEventListener('click', function() {
+    // 체크박스를 선택한 항목들 가져오기
+    const checkedItems = document.querySelectorAll('.mng-list-check:checked');
+    // 선택된 항목들 삭제
+    checkedItems.forEach(item => {
+      const listItem = item.closest('li'); // 체크된 항목의 <li> 요소 찾기
+      if (listItem) {
+        const hr = listItem.nextElementSibling;
+        listItem.remove(); // 해당 <li> 삭제
+        if(hr && hr.tagName === 'HR'){
+          hr.remove();
+      }
+    };
+  });
+});
+});
